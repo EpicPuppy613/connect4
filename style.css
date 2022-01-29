@@ -4,16 +4,16 @@ html {
     font-family: monospace;
 }
 .red {
-    color: red;
+    color: #ff6666;
 }
 .blue {
-    color: blue;
+    color: #6666ff;
 }
 .winred {
-    color: lightcoral;
+    color: #ff0000;
 }
 .winblue {
-    color: lightskyblue;
+    color: #0000ff;
 }
 td {
     text-align: center;
