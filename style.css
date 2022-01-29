@@ -1,0 +1,22 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.winred {
+    color: lightcoral;
+}
+.winblue {
+    color: lightskyblue;
+}
+td {
+    text-align: center;
+    color: lightgray;
+    font-weight: bold;
+}

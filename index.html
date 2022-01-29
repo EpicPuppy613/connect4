@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>connect 4</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h2>Connect 4</h2>
+    <p id="turn" class="blue">Current turn: BLUE</p>
+    <p>Current Score: <span class="blue" id="bluewin">0</span> - <span class="red" id="redwin">0</span></p>
+    <table id="board">
+        <tr>
+            <td><button class="select" onclick="Place(0)" id="p0">X</button></td>
+            <td><button class="select" onclick="Place(1)" id="p1">X</button></td>
+            <td><button class="select" onclick="Place(2)" id="p2">X</button></td>
+            <td><button class="select" onclick="Place(3)" id="p3">X</button></td>
+            <td><button class="select" onclick="Place(4)" id="p4">X</button></td>
+            <td><button class="select" onclick="Place(5)" id="p5">X</button></td>
+            <td><button class="select" onclick="Place(6)" id="p6">X</button></td>
+        </tr>
+        <tr id="b5">
+            <td id="0,5">⬤</td><td id="1,5">⬤</td><td id="2,5">⬤</td><td id="3,5">⬤</td><td id="4,5">⬤</td><td id="5,5">⬤</td><td id="6,5">⬤</td>
+        </tr>
+        <tr id="b4">
+            <td id="0,4">⬤</td><td id="1,4">⬤</td><td id="2,4">⬤</td><td id="3,4">⬤</td><td id="4,4">⬤</td><td id="5,4">⬤</td><td id="6,4">⬤</td>
+        </tr>
+        <tr id="b3">
+            <td id="0,3">⬤</td><td id="1,3">⬤</td><td id="2,3">⬤</td><td id="3,3">⬤</td><td id="4,3">⬤</td><td id="5,3">⬤</td><td id="6,3">⬤</td>
+        </tr>
+        <tr id="b2">
+            <td id="0,2">⬤</td><td id="1,2">⬤</td><td id="2,2">⬤</td><td id="3,2">⬤</td><td id="4,2">⬤</td><td id="5,2">⬤</td><td id="6,2">⬤</td>
+        </tr>
+        <tr id="b1">
+            <td id="0,1">⬤</td><td id="1,1">⬤</td><td id="2,1">⬤</td><td id="3,1">⬤</td><td id="4,1">⬤</td><td id="5,1">⬤</td><td id="6,1">⬤</td>
+        </tr>
+        <tr id="b0">
+            <td id="0,0">⬤</td><td id="1,0">⬤</td><td id="2,0">⬤</td><td id="3,0">⬤</td><td id="4,0">⬤</td><td id="5,0">⬤</td><td id="6,0">⬤</td>
+        </tr>
+    </table>
+    <button onclick="Reset()">Reset</button> AI Mode: <select id="ai">
+        <option value="0">Disabled (PvP)</option>
+        <option value="1">Easy (Random)</option>
+    </select>
+    <script src="script.js"></script>
+  </body>
+</html>
