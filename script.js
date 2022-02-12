@@ -82,7 +82,7 @@ function ComputerMove() {
                     board.push(row);
                 }
             }
-            if (mode == 2) choice = run(board);
+            if (mode == 2) choice = anonymous(board);
             
             max = [];
             for (i=0;i<7;i++) {
