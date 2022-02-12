@@ -62,11 +62,35 @@ function Main() {
 setInterval(Main, 50);
 function ComputerMove() {
     mode = document.getElementById("ai").value;
-    if (mode == 0) return;
-    if (mode == 1) {
+    if (game.win) return;
+    if (mode == '0') return;
+    if (mode == '1') {
         while (true) {
             choice = Math.floor(Math.random() * 7);
             if (game.filled[choice] == 6) continue;
+            else {
+                Place(choice);
+                break;
+            };
+        }
+    }
+    if (['2'].includes(mode)) {
+        while (true) {
+            board = [];
+            for (const column of game.board) {
+                for (const row of column) {
+                    board.push(row);
+                }
+            }
+            if (mode == 2) choice = RunAI0(board);
+            
+            max = [];
+            for (i=0;i<7;i++) {
+                max.push(choice[i]);
+            }
+            choice = max.indexOf(Math.max(...max));
+            if (game.filled[choice] == 6) { console.log("bruh"); choice = Math.floor(Math.random() * 7); }
+            if (game.filled[choice] == 6) { continue; }
             else {
                 Place(choice);
                 break;
